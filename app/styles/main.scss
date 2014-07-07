@@ -35,15 +35,13 @@ $containersPadding: 15px;
   height: $navBarHeight;
 
   .navbar-side-menu-icon {
-    width: 10%;
     line-height: 50px;
     margin: 0 0 0 $containersPadding;
     font-size: 25px;
   }
 
   .navbar-title {
-    float: none;
-    width: 90%;
+    width: 100%;
   }
 }
 

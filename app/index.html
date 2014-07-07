@@ -31,13 +31,19 @@
     </div>
 
     <div class="container unscrollable" snap-content snap-options="snapOptions">
+    
+        <nav snap-dragger class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="row">
+                <div class="col-xs-2">
+                    <div snap-toggle class="fa fa-bars navbar-left navbar-side-menu-icon"></div>
+                </div>
+                <div class="col-xs-8">
+                    <p class="navbar-brand text-center navbar-title">{{currentPage}}</p>
+                </div>
+            </div>
+        </nav>
 
-      <nav snap-dragger class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div snap-toggle class="fa fa-bars navbar-left navbar-side-menu-icon"></div>
-        <p class="navbar-brand text-center navbar-title">{{currentPage}}</p>
-      </nav>
-
-      <div ng-view class="view-container scrollable {{viewClass}}"></div>     
+        <div ng-view class="view-container scrollable {{viewClass}}"></div>
 
     </div>
 
