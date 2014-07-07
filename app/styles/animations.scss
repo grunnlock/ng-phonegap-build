@@ -1,0 +1,32 @@
+@import "_mixins";
+
+// Keyframes
+@include keyframes(scaleUp) {
+  to {
+    opacity: 0.8;
+    @include transform('scale(0.8)');
+  }
+}
+
+@include keyframes(slideInRight) {
+  from  { @include transform('translateX(100%)'); }
+  to    { @include transform('translateX(0)'); }
+}
+
+@include keyframes(slideInUp) {
+  from  { @include transform('translateY(100%)'); }
+  to    { @include transform('translateY(0)'); }
+}
+
+@include keyframes(slideOutLeft) {
+  to    { @include transform('translateX(-50%)'); }
+}
+
+// Uses
+.view-container.ng-leave {
+  @include animation('scaleUp 0.5s linear');
+}
+
+.view-container.ng-enter {
+  @include animation('slideInUp 0.3s linear');
+}

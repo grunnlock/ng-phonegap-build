@@ -1,0 +1,43 @@
+{
+  "name": "ng-phonegap-build",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "appPath": "app",
+  "description": "Bower file",
+  "authors": [
+    "Maxime Julian"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "phonegap_modules"
+  ],
+  "dependencies": {
+    "json3": "~3.3.1",
+    "jquery": "~2.1.1",
+    "bootstrap-sass-official": "~3.1.1",
+    "angular": "1.2.16",
+    "angular-animate": "1.2.16",
+    "angular-touch": "1.2.16",
+    "angular-route": "1.2.16",
+    "angular-snap": "~1.5.1",
+    "snapjs": "~1.9.3",
+    "fastclick": "~1.0.2",
+    "font-awesome": "~4.1.0"
+  },
+  "keywords": [
+    "Phonegap",
+    "Build",
+    "AngularJS",
+    "jQuery",
+    "Bootstrap",
+    "Sass",
+    "FastClick",
+    "SnapJS",
+    "Node",
+    "Grunt"
+  ],
+  "homepage": "index.html"
+}

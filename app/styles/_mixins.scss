@@ -1,0 +1,33 @@
+// Keyframes mixin
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// Animation
+@mixin animation($value) {
+  -webkit-animation: #{$value};
+  -moz-animation: #{$value};
+  -ms-animation: #{$value};
+  -o-animation: #{$value};
+  animation: #{$value}; 
+}
+
+// Transform
+@mixin transform($value) {
+  -webkit-transform: #{$value};
+  -moz-transform: #{$value};
+  -ms-transform: #{$value};
+  -o-transform: #{$value};
+  transform: #{$value}; 
+}
