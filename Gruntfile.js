@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 	    android: 'android',
 	    pgbModules: 'pgb_modules',
 	    pgbSettings: {
-	    	appId: 000000,				 // Don't forget to change
+	    	appId: '000000',			 // Don't forget to change
 	    	email: 'ACCOUNT_EMAIL',		 // these settings with your
 	    	password: 'ACCOUNT_PASSWORD' // Phonegap Build account ones!
 	    }
@@ -32,10 +32,14 @@ module.exports = function(grunt) {
 			options: {
             	livereload: {port: '<%= config.port %>'}
             },
-            server: {
+            html: {
             	files: [
             		'<%= config.app %>/index.html',
-            		'<%= config.app %>/views/{,*/}*.html',
+            		'<%= config.app %>/views/{,*/}*.html'
+            	],
+            },
+            js: {
+            	files: [
             		'<%= config.app %>/scripts/**/*.js'
             	],
             },
