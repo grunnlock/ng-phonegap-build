@@ -211,6 +211,7 @@ module.exports = function(grunt) {
 
 		useminPrepare: {
 			options: {
+				root: '<%= config.app %>',
 				dest: '<%= config.dist %>'
 			},
 			html: '<%= config.app %>/**/*.html'
